@@ -1,0 +1,68 @@
+// Fonts
+
+@font-face {
+		font-family: 'aileron';
+		src: url('/fonts/aileron_light.eot');
+		src: url('/fonts/aileron_light.eot?#iefix') format('embedded-opentype'),
+				 url('/fonts/aileron_light.woff') format('woff'),
+				 url('/fonts/aileron_light.ttf') format('truetype'),
+				 url('/fonts/aileron_light.svg#aileron-light') format('svg');
+		font-style: normal;
+		font-weight: 100;
+}
+
+@font-face {
+		font-family: 'aileron';
+		src: url('/fonts/aileron_light-italic.eot');
+		src: url('/fonts/aileron_light-italic.eot?#iefix') format('embedded-opentype'),
+				 url('/fonts/aileron_light-italic.woff') format('woff'),
+				 url('/fonts/aileron_light-italic.ttf') format('truetype'),
+				 url('/fonts/aileron_light-italic.svg#aileron-light-italic') format('svg');
+		font-style: italic;
+		font-weight: 100;
+}
+
+@font-face {
+		font-family: 'aileron';
+		src: url('/fonts/aileron_regular.eot');
+		src: url('/fonts/aileron_regular.eot?#iefix') format('embedded-opentype'),
+				 url('/fonts/aileron_regular.woff') format('woff'),
+				 url('/fonts/aileron_regular.ttf') format('truetype'),
+				 url('/fonts/aileron_regular.svg#aileron-regular') format('svg');
+		font-style: normal;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: 'aileron';
+		src: url('/fonts/aileron_italic.eot');
+		src: url('/fonts/aileron_italic.eot?#iefix') format('embedded-opentype'),
+				 url('/fonts/aileron_italic.woff') format('woff'),
+				 url('/fonts/aileron_italic.ttf') format('truetype'),
+				 url('/fonts/aileron_italic.svg#aileron-italic') format('svg');
+		font-style: italic;
+		font-weight: normal;
+}
+
+@font-face {
+		font-family: 'aileron';
+		src: url('/fonts/aileron_bold.eot');
+		src: url('/fonts/aileron_bold.eot?#iefix') format('embedded-opentype'),
+				 url('/fonts/aileron_bold.woff') format('woff'),
+				 url('/fonts/aileron_bold.ttf') format('truetype'),
+				 url('/fonts/aileron_bold.svg#aileron-bold') format('svg');
+		font-style: normal;
+		font-weight: bold;
+}
+
+@font-face {
+		font-family: 'aileron';
+		src: url('/fonts/aileron_bold-italic.eot');
+		src: url('/fonts/aileron_bold-italic.eot?#iefix') format('embedded-opentype'),
+				 url('/fonts/aileron_bold-italic.woff') format('woff'),
+				 url('/fonts/aileron_bold-italic.ttf') format('truetype'),
+				 url('/fonts/aileron_bold-italic.svg#aileron-bold-italic') format('svg');
+		font-style: italic;
+		font-weight: bold;
+}
+
