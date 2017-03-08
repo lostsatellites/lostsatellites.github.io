@@ -1,4 +1,4 @@
 node_modules/
 .DS_Store
-sftp.json
+sftp-config.json
 .sublime-project
