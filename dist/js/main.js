@@ -1,1 +1,0 @@
-function openSection(){main.classList.add("section-has-transition","section-is-open"),this.classList.add("open")}function closeSection(o){o.stopPropagation(),main.classList.remove("section-has-transition"),console.log("close")}const main=document.querySelector(".main"),sections=document.querySelectorAll(".section"),closeBtns=document.querySelectorAll(".close-section");
