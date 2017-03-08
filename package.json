@@ -1,7 +1,7 @@
 {
-  "name": "3e",
+  "name": "JE",
   "version": "1.0.0",
-  "description": "The Life Time Agency",
+  "description": "jeremyelder.com",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
