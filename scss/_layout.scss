@@ -20,7 +20,7 @@
 }
 
 .s1 {
-	background: darken($cloud, 24%) url('/dist/img/jebg.jpg') no-repeat top center;
+	background: $black url('/dist/img/jebg.jpg') no-repeat top center;
 	background-size: cover;
 	flex: 2;
 	padding: 0 2rem;
