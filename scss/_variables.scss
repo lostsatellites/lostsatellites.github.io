@@ -10,10 +10,10 @@ $bp-xl: 1200px !default;
 // colors
 $cloud: #e7e6e3;
 $haze: #f7f7f7;
-$smoke: #555;
+$smoke: #262320;
 $blue: #0194f2;
 $white: #fff;
-$black: #161616;
+$black: darken($smoke, 8%);
 
 // Fonts
-$font-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-sans-serif: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;

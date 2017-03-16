@@ -14,6 +14,44 @@
 	align-items: center;
 	display: flex;
 	flex: 1;
+	flex-direction: column;
 	justify-content: center;
+	text-align: center;
+}
+
+.s1 {
+	background: darken($cloud, 24%) url('/dist/img/jebg.jpg') no-repeat top center;
+	background-size: cover;
+	flex: 2;
+	padding: 0 2rem;
+
+	h1 {
+		margin-bottom: 0;
+	}
+
+	p {
+		font-weight: 300;
+		letter-spacing: 0.04em;
+		max-width: 600px;
+	}
+
+	@include MQ(md) {
+		background-image: url('/dist/img/jebg-md.jpg');
+	}
+
+	@include MQ(lg) {
+		background-image: url('/dist/img/jebg-lg.jpg');
+	}
+}
+
+.s2 {
+	background-color: $black;
+}
+
+[aria-label="connect"] {
+
+	a:not(:last-child) {
+		margin-right: 2rem;
+	}
 }
 

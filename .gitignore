@@ -1,4 +1,5 @@
 node_modules/
 .DS_Store
 sftp-config.json
-.sublime-project
+webj.sublime-project
+webj.sublime-workspace

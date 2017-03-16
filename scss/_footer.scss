@@ -1,8 +1,12 @@
 // Footer
 
 .footer {
+	background-color: darken($smoke, 5%);
+	color: $haze;
+	text-align: center;
 
 	@include MQ(md) {
+		background-color: transparent;
 		position: absolute;
 		bottom: 0;
 	}
@@ -12,24 +16,8 @@
 	font-size: 0.813rem;
 	margin: 0.5rem 1rem;
 
-	a {
-		border-bottom: 1px solid transparent;
-		color: $smoke;
-		text-decoration: none;
-		transition: border-bottom-color 0.2s linear;
-
-		&:hover {
-			border-bottom-color: currentColor;
-		}
-	}
-
 	@include MQ(md) {
 		margin: 1rem 1rem 1rem 1.5rem;
-	}
-
-	.divider {
-		display: inline-block;
-		margin: 0 4px;
 	}
 }
 
