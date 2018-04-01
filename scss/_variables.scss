@@ -12,8 +12,22 @@ $cloud: #e7e6e3;
 $haze: #f7f7f7;
 $smoke: #262320;
 $blue: #0194f2;
+$navy: #0b1535;
+$aqua: #86f2fe;
 $white: #fff;
 $black: darken($smoke, 8%);
 
 // Fonts
 $font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+// Defaults
+$space: 1em !default;
+$space-and-half: $space * 1.5 !default;
+$space-double: $space * 2 !default;
+$space-triple: $space * 3 !default;
+$space-quad: $space * 4 !default;
+$space-half: $space / 2 !default;
+
+// Transition speed
+$trans-spd: 0.3s !default;
+

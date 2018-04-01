@@ -4,54 +4,71 @@
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-}
 
-.main-content {
-	text-align: left;
-}
-
-.section {
-	align-items: center;
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
-}
-
-.s1 {
-	background: $smoke url('/dist/img/jebg.jpg') no-repeat top center;
-	background-size: cover;
-	flex: 2;
-	padding: 0 2rem;
-
-	h1 {
-		margin-bottom: 0;
-	}
-
-	p {
-		font-weight: 300;
-		letter-spacing: 0.04em;
-		max-width: 760px;
-	}
-
-	@include MQ(md) {
-		background-image: url('/dist/img/jebg-md.jpg');
-	}
-
-	@include MQ(lg) {
-		background-image: url('/dist/img/jebg-lg.jpg');
+	@include breakpoint(md) {
+		flex-direction: row;
 	}
 }
 
-.s2 {
-	background-color: $smoke;
-}
+.col {
+	min-width: 100%;
 
-[aria-label="connect"] {
-
-	a:not(:last-child) {
-		margin-right: 2rem;
+	@include breakpoint(md) {
+		flex: 0 1 50%;
+		min-width: 50%;
 	}
 }
+
+
+
+// Deprecate
+
+// .main-content {
+// 	text-align: left;
+// }
+
+// .section {
+// 	align-items: center;
+// 	display: flex;
+// 	flex: 1;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	text-align: center;
+// }
+
+// .s1 {
+// 	background: $smoke url('/dist/img/jebg.jpg') no-repeat top center;
+// 	background-size: cover;
+// 	flex: 2;
+// 	padding: 0 2rem;
+
+// 	h1 {
+// 		margin-bottom: 0;
+// 	}
+
+// 	p {
+// 		font-weight: 300;
+// 		letter-spacing: 0.04em;
+// 		max-width: 760px;
+// 	}
+
+// 	@include breakpoint(md) {
+// 		background-image: url('/dist/img/jebg-md.jpg');
+// 	}
+
+// 	@include breakpoint(lg) {
+// 		background-image: url('/dist/img/jebg-lg.jpg');
+// 	}
+// }
+
+// .s2 {
+// 	background-color: $smoke;
+// }
+
+// [aria-label="connect"] {
+
+// 	a:not(:last-child) {
+// 		margin-right: 2rem;
+// 	}
+// }
 

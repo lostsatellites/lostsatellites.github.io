@@ -1,7 +1,7 @@
 // Breakpoints
 
-// @include MQ(sm) {};
-@mixin MQ($min: 0, $max: 0) {
+// @include breakpoint(sm) {};
+@mixin breakpoint($min: 0, $max: 0) {
   $type: type-of($min);
 
   @if $type == string {

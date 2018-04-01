@@ -59,7 +59,7 @@ $max-width: 1200px;
 
 	&-collapse {
 
-		@include MQ(md) {
+		@include breakpoint(md) {
 			margin-left: 0;
 			margin-right: 0;
 		}
@@ -90,7 +90,7 @@ $max-width: 1200px;
 
 // Use this when you want to have columns,
 // even at narrower viewports.
-@include MQ(xs) {
+@include breakpoint(xs) {
 	@for $sum from 1 through $max-cols {
 		.col-xs-#{$sum} {
 			@include col($sum, $max-cols);
@@ -128,7 +128,7 @@ $max-width: 1200px;
 
 // Small (sm)
 
-@include MQ(sm) {
+@include breakpoint(sm) {
 	@for $sum from 1 through $max-cols {
 		.col-sm-#{$sum} {
 			@include col($sum, $max-cols);
@@ -166,7 +166,7 @@ $max-width: 1200px;
 
 // Medium (md)
 
-@include MQ(md) {
+@include breakpoint(md) {
 	@for $sum from 1 through $max-cols {
 		.col-md-#{$sum} {
 			@include col($sum, $max-cols);
@@ -203,7 +203,7 @@ $max-width: 1200px;
 
 // Large (lg)
 
-@include MQ(lg) {
+@include breakpoint(lg) {
 	@for $sum from 1 through $max-cols {
 		.col-lg-#{$sum} {
 			@include col($sum, $max-cols);
@@ -241,7 +241,7 @@ $max-width: 1200px;
 
 // Extra Large (xl)
 
-@include MQ(xl) {
+@include breakpoint(xl) {
 	@for $sum from 1 through $max-cols {
 		.col-xl-#{$sum} {
 			@include col($sum, $max-cols);

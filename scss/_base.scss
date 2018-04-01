@@ -13,7 +13,7 @@ html {
 
 body {
 	background-color: $cloud;
-	color: $white;
+	// color: $white;
 	display: flex;
 	flex-flow: column;
 	font-size: 1.25rem;
@@ -23,9 +23,17 @@ body {
 	position: relative;
 	-webkit-font-smoothing: antialiased;
 
-	@include MQ(md) {
+	@include breakpoint(md) {
 		font-size: 1.5rem;
 	}
+}
+
+// Fluid images by default
+img {
+	display: block;
+	height: auto !important;
+	width: 100% \9; // Force IE10 and below to size SVG images correctly
+	max-width: 100%;
 }
 
 .container {
