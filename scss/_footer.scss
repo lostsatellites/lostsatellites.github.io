@@ -1,23 +1,41 @@
 // Footer
 
 .footer {
-	background-color: darken($smoke, 5%);
+	align-items: center;
+	background-color: darken($navy, 5%);
+	display: flex;
 	color: $haze;
-	text-align: center;
-
-	@include breakpoint(md) {
-		background-color: transparent;
-		position: absolute;
-		bottom: 0;
-	}
+	justify-content: center;
+	padding: 2rem 0;
 }
 
 .colophon {
 	font-size: 0.813rem;
-	margin: 0.5rem 1rem;
+	margin: 0 1rem 0 0;
 
 	@include breakpoint(md) {
-		margin: 1rem 1rem 1rem 1.5rem;
+		margin-right: 3rem;
+	}
+}
+
+.nav-connect-list {
+	font-size: 0;
+	list-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-connect-item {
+	display: inline-block;
+	font-size: 1rem;
+	vertical-align: middle;
+
+	&:not(:last-child) {
+		margin-right: 1rem;
+
+		@include breakpoint(md) {
+			margin-right: 2rem;
+		}
 	}
 }
 
