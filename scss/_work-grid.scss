@@ -1,0 +1,100 @@
+// Figure
+
+.work-item {
+	display: block;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+
+	@include breakpoint(md) {
+		float: left;
+	}
+
+	&:hover,
+	&:focus {
+
+		@include breakpoint(md) {
+
+			.work-item__title {
+				opacity: 1;
+				visibility: visible;
+				transform: scale(1);
+			}
+
+			img {
+				transform: scale(1.02);
+			}
+		}
+	}
+
+	img {
+		transition: transform $trans-spd 0s;
+	}
+
+	&--square-sm {
+
+		@include breakpoint(md) {
+			width: 50%;
+		}
+	}
+
+	&--tall {
+
+		@include breakpoint(lg) {
+			width: 50%;
+		}
+	}
+}
+
+.work-item__title {
+	font-size: 1.125rem;
+	font-weight: 400;
+	padding: $space-half $space $space-double;
+	transition: transform $trans-spd 0s, visibility $trans-spd 0s, opacity $trans-spd 0s;
+
+	@include breakpoint(md) {
+		background-color: rgba($navy, 0.85);
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		visibility: hidden;
+		transform: scale(1.02);
+	}
+
+	@include breakpoint(lg) {
+		font-size: 1.5rem;
+		padding: $space-double;
+	}
+
+	@include breakpoint(xl) {
+		font-size: 1.55rem;
+		padding: $space;
+	}
+}
+
+.work-item__heading {
+	margin-bottom: 0;
+
+	@include breakpoint(md) {
+		color: $white;
+		font-size: 1.25rem;
+	}
+
+	@include breakpoint(xl) {
+		font-size: 1.5rem;
+	}
+}
+
+.work-item__descriptor {
+	color: $gray;
+	font-size: 1rem;
+
+	@include breakpoint(md) {
+		color: $aqua;
+	}
+}
+

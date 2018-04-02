@@ -1,0 +1,23 @@
+// Headings
+
+// Heading Sizes
+@mixin responsive-headers($settings) {
+  @each $property, $attribute in $settings {
+    @if type-of($attribute) == 'map' { // property is a breakpoint
+      $breakpoint: $property;
+      @if $breakpoint == $bp-xs {
+        @each $key, $value in $attribute {
+          #{$key}: #{$value};
+        }
+      } @else {
+        @media screen and (min-width: $breakpoint) {
+          @each $key, $value in $attribute {
+            #{$key}: #{$value};
+          }
+        }
+      }
+    } @else {
+      #{$property}: #{$attribute};
+    }
+  }
+}

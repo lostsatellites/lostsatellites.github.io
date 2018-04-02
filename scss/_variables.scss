@@ -15,6 +15,7 @@ $blue: #006694;
 $navy: #0b1535;
 $aqua: #86f2fe;
 $white: #fff;
+$gray: #707070;
 $black: darken($smoke, 8%);
 
 // Fonts
@@ -30,4 +31,164 @@ $space-half: $space / 2 !default;
 
 // Transition speed
 $trans-spd: 0.3s !default;
+
+// Typography
+$root-font-size: 16px !default;
+$base-font-size: 1em !default;
+$base-line-height: 1.5 !default;
+
+// Headings
+// For the system of .h1-.h6 classes to properly overwrite the base tag, you must include all properties transformed
+// at every breakpoint, even if those properties are the default or assigned at an earlier breakpoint.
+$h1-properties: (
+  font-weight: 400,
+  letter-spacing: 0.01em,
+  text-transform: none,
+  $bp-xs : (
+    font-size : 2rem,         // 32px
+    line-height : 1,          // 32px
+    margin-bottom : 1rem      // 16px
+  ),
+  $bp-sm : (
+    font-size : 2.25rem,      // 36px
+    line-height : 1,          // 36px
+    margin-bottom : 0.75rem   // 12px
+  ),
+  $bp-md : (
+    font-size : 2.5rem,       // 40px
+    line-height : 1.2,        // 48px
+    margin-bottom : 1.5rem    // 24px
+  ),
+  $bp-lg : (
+    font-size : 3rem,         // 48px
+    line-height : 1,          // 48px
+    margin-bottom : 1.5rem    // 24px
+  )
+) !default;
+
+$h2-properties: (
+  font-weight: 400,
+  letter-spacing: 0,
+  $bp-xs : (
+    font-size : 1.5rem,       // 24px
+    line-height : 1.25,       // 30px
+    margin-bottom : 1.125rem  // 18px
+  ),
+  $bp-sm : (
+    font-size : 1.75rem,      // 28px
+    line-height : 1,          // 28px
+    margin-bottom : 1.25rem   // 20px
+  ),
+  $bp-md : (
+    font-size : 1.875rem,     // 30px
+    line-height : 1,          // 30px
+    margin-bottom : 1.125rem  // 18px
+  ),
+  $bp-lg : (
+    font-size : 2.25rem,      // 36px
+    line-height : 1.278,      // 46px
+    margin-bottom : 1.625rem  // 26px
+  )
+) !default;
+
+$h3-properties: (
+  font-weight: 400,
+  text-transform: none,
+  $bp-xs : (
+    font-size : 1.25rem,      // 20px
+    line-height : 1.4,        // 28px
+    margin-bottom : 1.25rem   // 20px
+  ),
+  $bp-sm : (
+    font-size : 1.375rem,     // 22px
+    line-height : 1.091,      // 28px
+    margin-bottom : 1.25rem   // 20px
+  ),
+  $bp-md : (
+    font-size : 1.5rem,       // 24px
+    line-height : 1.273,      // 28px
+    margin-bottom : 1.25rem   // 20px
+  ),
+  $bp-lg : (
+    font-size : 1.75rem,      // 28px
+    line-height : 1,          // 28px
+    margin-bottom : 1.25rem   // 20px
+  )
+) !default;
+
+$h4-properties: (
+  font-weight: 400,
+  text-transform: none,
+  $bp-xs : (
+    font-size : 1rem,         // 16px
+    line-height : 1.5,        // 24px
+    margin-bottom : 1.5rem    // 24px
+  ),
+  $bp-sm : (
+    font-size : 1rem,         // 16px
+    line-height : 1.5,        // 24px
+    margin-bottom : 1.5rem    // 24px
+  ),
+  $bp-md : (
+    font-size : 1.125rem,     // 18px
+    line-height : 1.375,      // 22px
+    margin-bottom : 1.25rem   // 20px
+  ),
+  $bp-lg : (
+    font-size : 1.25rem,      // 20px
+    line-height : 1.2,        // 24px
+    margin-bottom : 1.375rem  // 22px
+  )
+) !default;
+
+$h5-properties: (
+  font-weight: 400,
+  letter-spacing: 0.01em,
+  text-transform: none,
+  $bp-xs : (
+    font-size : 0.875rem,     // 14px
+    line-height : 1.429,      // 20px
+    margin-bottom : 0.25rem,  // 4px
+  ),
+  $bp-sm : (
+    font-size : 0.875rem,     // 14px
+    line-height : 1.429,      // 20px
+    margin-bottom : 0.25rem,  // 4px
+  ),
+  $bp-md : (
+    font-size : 1rem,         // 16px
+    line-height : 1.5,        // 24px
+    margin-bottom : 0,        // none
+  ),
+  $bp-lg : (
+    font-size : 1rem,         // 16px
+    line-height : 1.5,        // 24px
+    margin-bottom : 0,        // none
+  )
+) !default;
+
+$h6-properties: (
+  font-weight: 400,
+  text-transform: none,
+  $bp-xs : (
+    font-size : 0.875rem,     // 14px
+    line-height : 1.429,      // 20px
+    margin-bottom : 0.25rem,  // 4px
+  ),
+  $bp-sm : (
+    font-size : 0.875rem,     // 14px
+    line-height : 1.429,      // 20px
+    margin-bottom : 0.25rem,  // 4px
+  ),
+  $bp-md : (
+    font-size : 1rem,         // 16px
+    line-height : 1.5,        // 24px
+    margin-bottom : 0,        // none
+  ),
+  $bp-lg : (
+    font-size : 1rem,         // 16px
+    line-height : 1.5,        // 24px
+    margin-bottom : 0,        // none
+  )
+) !default;
 
