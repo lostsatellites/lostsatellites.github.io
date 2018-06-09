@@ -1,5 +1,15 @@
 // Layout
 
+.container {
+	margin: 0 auto;
+	max-width: $max-width;
+	padding-left: $gutter-width;
+	padding-right: $gutter-width;
+	position: relative;
+	width: 100%;
+	@include clearfix();
+}
+
 .main-work {
 	display: flex;
 	flex: 1;
@@ -7,6 +17,30 @@
 
 	@include breakpoint(md) {
 		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+.intro {
+	padding-bottom: $space;
+
+	@include breakpoint(md) {
+		padding-bottom: $space-double;
+	}
+
+	&__h,
+	&__p {
+		max-width: 54rem;
+	}
+
+	&__p {
+		border-left: 4px solid rgba($black,0.07);
+		font-size: 1.25rem;
+		padding-left: 1rem;
+
+		@include breakpoint(md) {
+			font-size: 1.5rem;
+		}
 	}
 }
 
