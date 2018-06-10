@@ -2,9 +2,10 @@
 
 .footer {
 	align-items: center;
-	background-color: darken($navy, 5%);
-	display: flex;
+	background-color: darken($gray, 5%);
 	color: $haze;
+	display: flex;
+	font-family: $font-sans-serif;
 	justify-content: center;
 	padding: 2rem 0;
 }

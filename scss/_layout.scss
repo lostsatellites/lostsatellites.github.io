@@ -28,12 +28,12 @@
 		padding-bottom: $space-double;
 	}
 
-	&__h,
-	&__p {
+	&__heading,
+	&__descriptor {
 		max-width: 54rem;
 	}
 
-	&__p {
+	&__descriptor {
 		border-left: 4px solid rgba($black,0.07);
 		font-size: 1.25rem;
 		padding-left: 1rem;
