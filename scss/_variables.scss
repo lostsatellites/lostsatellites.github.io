@@ -60,13 +60,13 @@ $h1-properties: (
     margin-bottom : 0.75rem   // 12px
   ),
   $bp-md : (
-    font-size : 2.5rem,       // 40px
-    line-height : 1.2,        // 48px
+    font-size : 3rem,         // 48px
+    line-height : 1,          // 48px
     margin-bottom : 1.5rem    // 24px
   ),
   $bp-lg : (
-    font-size : 4rem,         // 48px
-    line-height : 1,          // 48px
+    font-size : 4rem,         // 64px
+    line-height : 1,          // 64px
     margin-bottom : 1.5rem    // 24px
   )
 ) !default;
