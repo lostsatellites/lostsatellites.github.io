@@ -1,0 +1,40 @@
+// Utilities
+
+// Text alignment
+.text-center {
+	text-align: center;
+}
+
+// Small text
+.small {
+	font-size: 1rem;
+}
+
+// Sans-serif
+.font-sans {
+	font-family: $font-sans-serif;
+}
+
+// Circle
+.circle {
+	border-radius: 50%;
+
+	&--avatar {
+		display: inline-block;
+		max-width: 200px;
+	}
+}
+
+// Visually hidden
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	white-space: nowrap;
+}
+

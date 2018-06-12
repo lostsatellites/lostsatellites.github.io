@@ -134,6 +134,22 @@ blockquote {
 	}
 }
 
+ul,
+ol {
+	margin-left: 0;
+	padding-left: 1em;
+}
+
+.list-dashed {
+
+	li::before {
+		content: "=";
+    font-size: 1.125em;
+    line-height: 1;
+    margin: 0 0.5em 0 -1em;
+	}
+}
+
 ul ul,
 ol ol,
 ul ol,

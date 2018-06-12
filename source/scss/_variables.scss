@@ -41,6 +41,7 @@ $trans-spd: 0.3s !default;
 $root-font-size: 16px !default;
 $base-font-size: 1em !default;
 $base-line-height: 1.5 !default;
+$measure: 44rem;
 
 // Headings
 // For the system of .h1-.h6 classes to properly overwrite the base tag, you must include all properties transformed
@@ -72,7 +73,7 @@ $h1-properties: (
 ) !default;
 
 $h2-properties: (
-  font-weight: 700,
+  font-weight: 600,
   letter-spacing: 0.2,
   $bp-xs : (
     font-size : 1.5rem,       // 24px
@@ -97,7 +98,7 @@ $h2-properties: (
 ) !default;
 
 $h3-properties: (
-  font-weight: 400,
+  font-weight: 600,
   text-transform: none,
   $bp-xs : (
     font-size : 1.25rem,      // 20px
@@ -122,7 +123,7 @@ $h3-properties: (
 ) !default;
 
 $h4-properties: (
-  font-weight: 400,
+  font-weight: 700,
   text-transform: none,
   $bp-xs : (
     font-size : 1rem,         // 16px
@@ -147,7 +148,7 @@ $h4-properties: (
 ) !default;
 
 $h5-properties: (
-  font-weight: 400,
+  font-weight: 600,
   letter-spacing: 0.01em,
   text-transform: none,
   $bp-xs : (
@@ -173,7 +174,7 @@ $h5-properties: (
 ) !default;
 
 $h6-properties: (
-  font-weight: 400,
+  font-weight: 600,
   text-transform: none,
   $bp-xs : (
     font-size : 0.875rem,     // 14px
