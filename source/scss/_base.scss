@@ -35,7 +35,8 @@ img {
 
 // Links
 a {
-	color: $navy;
+	text-decoration: none;
+	transition: border-bottom-color 0.2s linear;
 }
 
 

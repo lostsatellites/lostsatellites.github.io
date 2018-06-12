@@ -16,7 +16,7 @@ var autoprefixerOptions = {
 
 // Compile Sass
 gulp.task('sass', function () {
-	return gulp.src('scss/style.scss')
+	return gulp.src('source/scss/style.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(sourcemaps.init())
 		.pipe(autoprefixer(autoprefixerOptions))
@@ -28,7 +28,7 @@ gulp.task('sass', function () {
 
 // Concatenate scripts
 gulp.task("scripts", function() {
-	gulp.src(['js/main.js'])
+	gulp.src(['source/js/main.js'])
 			.pipe(include())
 			.pipe(uglify())
 			.pipe(gulp.dest("dist/js/"))
@@ -36,7 +36,7 @@ gulp.task("scripts", function() {
 
 // Compress images
 gulp.task('images', function () {
-	return gulp.src('img/*')
+	return gulp.src('source/img/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/img'))
 		.pipe(browserSync.reload({stream:true}));
@@ -44,25 +44,36 @@ gulp.task('images', function () {
 
 // Move fonts
 gulp.task('fonts', function () {
-	return gulp.src('fonts/*')
+	return gulp.src('source/fonts/*')
 		.pipe(gulp.dest('dist/fonts'))
+});
+
+// Move files
+var filesToMove = [
+		'source/**/*.html',
+		'source/work/**/*.*'
+	];
+
+gulp.task('files', function() {
+	gulp.src(filesToMove, { base: 'source/' })
+	.pipe(gulp.dest('dist'))
+	.pipe(browserSync.reload({stream:true}));
 });
 
 // Watch files for changes
 gulp.task('watch', ['sync'], function() {
-		gulp.watch('*.html', reload);
-		gulp.watch('scss/**/*.scss', ['sass']);
-		gulp.watch('js/*.js', reload);
-		gulp.watch('img/*', ['images']);
+		gulp.watch('source/*.html', reload);
+		gulp.watch('source/scss/**/*.scss', ['sass']);
+		gulp.watch('source/js/*.js', reload);
+		gulp.watch('source/img/*', ['images']);
 });
 
 // Browser Sync
 gulp.task('sync', function() {
- browserSync.init({
-	 proxy: "webj.dev",
-	 files: "*.js,*.css,*.html,css/*css"
+	browserSync.init({
+		server: ['source', 'dist']
 	});
 });
 
-gulp.task('default', ['sass', 'images', 'fonts', 'watch', 'sync']);
+gulp.task('default', ['sass', 'images', 'fonts', 'files', 'watch', 'sync']);
 

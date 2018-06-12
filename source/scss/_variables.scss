@@ -12,7 +12,7 @@ $cloud: #fbfaf6;
 $haze: #f7f7f7;
 $smoke: #262320;
 $blue: #006694;
-$navy: #0b1535;
+$navy: #0311b0;
 $aqua: #86f2fe;
 $white: #fff;
 $gray: #384345;
@@ -57,17 +57,17 @@ $h1-properties: (
   $bp-sm : (
     font-size : 2.25rem,      // 36px
     line-height : 1,          // 36px
-    margin-bottom : 0.75rem   // 12px
+    margin-bottom : 1.5rem    // 24px
   ),
   $bp-md : (
     font-size : 3rem,         // 48px
     line-height : 1,          // 48px
-    margin-bottom : 1.5rem    // 24px
+    margin-bottom : 2rem      // 32px
   ),
   $bp-lg : (
     font-size : 4rem,         // 64px
     line-height : 1,          // 64px
-    margin-bottom : 1.5rem    // 24px
+    margin-bottom : 2.5rem    // 40px
   )
 ) !default;
 

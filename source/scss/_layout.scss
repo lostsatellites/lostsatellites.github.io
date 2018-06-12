@@ -7,21 +7,14 @@
 	min-height: 100vh;
 }
 
-.container {
+.main,
+.main__intro {
 	margin: 0 auto;
 	max-width: $max-width;
 	padding-left: $gutter-width;
 	padding-right: $gutter-width;
 	position: relative;
 	width: 100%;
-	@include clearfix();
-}
-
-.main {
-	// Flexbox sticky footer
-	flex: 1;
-	padding-left: $space;
-	padding-right: $space;
 
 	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, ol, ul {
 		margin-left: auto;
@@ -30,18 +23,25 @@
 	}
 }
 
-.main-work {
-	display: flex;
+.main {
+	// Flexbox sticky footer
 	flex: 1;
-	flex-direction: column;
 
-	@include breakpoint(md) {
-		flex-direction: row;
-		flex-wrap: wrap;
+	// Links
+	a {
+		border-bottom: 2px solid rgba($navy,0.25);
+		color: $navy;
+		text-decoration: none;
+		transition: border-bottom-color 0.2s linear;
+
+		&:hover {
+			border-bottom-color: inherit;
+			color: darken($navy, 10%);
+		}
 	}
 }
 
-.intro {
+.main__intro {
 	padding-bottom: $space;
 
 	@include breakpoint(md) {
@@ -61,6 +61,17 @@
 		@include breakpoint(md) {
 			font-size: 1.5rem;
 		}
+	}
+}
+
+.main-work {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+
+	@include breakpoint(md) {
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 }
 
