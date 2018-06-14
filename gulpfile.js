@@ -62,7 +62,7 @@ gulp.task('files', function() {
 
 // Watch files for changes
 gulp.task('watch', ['sync'], function() {
-		gulp.watch('source/*.html', reload);
+		gulp.watch('source/**/*.html', reload);
 		gulp.watch('source/scss/**/*.scss', ['sass']);
 		gulp.watch('source/js/*.js', reload);
 		gulp.watch('source/img/*', ['images']);

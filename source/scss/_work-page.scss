@@ -1,0 +1,20 @@
+// Work page
+
+.nav-work {
+	font-family: $font-sans-serif;
+	font-size: 1rem;
+	list-style: none;
+	padding: 0;
+
+	&__item a {
+		border-bottom-width: 1px;
+		position: relative;
+
+		&[aria-current="page"]::before {
+			content: '\2022';
+			position: absolute;
+			left: -0.75em;
+		}
+	}
+}
+

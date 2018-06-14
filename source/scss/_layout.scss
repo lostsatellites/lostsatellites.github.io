@@ -16,7 +16,7 @@
 	position: relative;
 	width: 100%;
 
-	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, ol, ul {
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, ol, ul, hr, figcaption, blockquote {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: $measure;
@@ -44,6 +44,43 @@
 			color: darken($navy, 10%);
 		}
 	}
+
+	// Images
+	img {
+		margin: 0 auto 1.5em;
+	}
+
+	// Figure
+	figure {
+		margin: 0 auto 1.5em;
+		text-align: center;
+	}
+
+	figcaption {
+		font-family: $font-sans-serif;
+		font-size: 0.813em;
+	}
+
+	// Blockquotes
+	blockquote {
+		color: $smoke;
+		font-size: 1.5em;
+		line-height: 1.25;
+		margin-top: 1.5em;
+		text-align: center;
+
+		@include breakpoint(md) {
+			font-size: 1.75em;
+		}
+
+		@include breakpoint(lg) {
+			float: right;
+			margin-top: 0;
+			margin-left: $space;
+			text-align: left;
+			width: 300px;
+		}
+	}
 }
 
 .main__intro {
@@ -59,9 +96,7 @@
 	}
 
 	&__descriptor {
-		border-left: 4px solid rgba($black,0.07);
 		font-size: 1.25rem;
-		padding-left: 1rem;
 
 		@include breakpoint(md) {
 			font-size: 1.5rem;
@@ -103,56 +138,17 @@
 	width: 48%;
 }
 
+// hr
+.break {
+	border: 0;
+	border-top: 1px solid $smoke;
+	height: 0;
+	margin-top: $space-double;
+	margin-bottom: $space-double;
 
-
-// Deprecate
-
-// .main-content {
-// 	text-align: left;
-// }
-
-// .section {
-// 	align-items: center;
-// 	display: flex;
-// 	flex: 1;
-// 	flex-direction: column;
-// 	justify-content: center;
-// 	text-align: center;
-// }
-
-// .s1 {
-// 	background: $smoke url('/dist/img/jebg.jpg') no-repeat top center;
-// 	background-size: cover;
-// 	flex: 2;
-// 	padding: 0 2rem;
-
-// 	h1 {
-// 		margin-bottom: 0;
-// 	}
-
-// 	p {
-// 		font-weight: 300;
-// 		letter-spacing: 0.04em;
-// 		max-width: 760px;
-// 	}
-
-// 	@include breakpoint(md) {
-// 		background-image: url('/dist/img/jebg-md.jpg');
-// 	}
-
-// 	@include breakpoint(lg) {
-// 		background-image: url('/dist/img/jebg-lg.jpg');
-// 	}
-// }
-
-// .s2 {
-// 	background-color: $smoke;
-// }
-
-// [aria-label="connect"] {
-
-// 	a:not(:last-child) {
-// 		margin-right: 2rem;
-// 	}
-// }
+	@include breakpoint(md) {
+		margin-top: $space-quad;
+		margin-bottom: $space-quad;
+	}
+}
 
