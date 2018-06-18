@@ -45,6 +45,13 @@
 		}
 	}
 
+	// External links
+	.ext-ref+span:after {
+    content: "\0020\2197";
+    font-family: $font-sans-serif;
+    font-size: 0.75em;
+	}
+
 	// Images
 	img {
 		margin: 0 auto 1.5em;
@@ -64,21 +71,25 @@
 	// Blockquotes
 	blockquote {
 		color: $smoke;
-		font-size: 1.5em;
-		line-height: 1.25;
 		margin-top: 1.5em;
-		text-align: center;
-
-		@include breakpoint(md) {
-			font-size: 1.75em;
-		}
 
 		@include breakpoint(lg) {
 			float: right;
 			margin-top: 0;
 			margin-left: $space;
-			text-align: left;
 			width: 300px;
+		}
+
+		p {
+			font-size: 1.5em;
+			line-height: 1.25;
+			margin-bottom: 0;
+			text-align: center;
+
+			@include breakpoint(md) {
+				// font-size: 1.75em;
+				text-align: left;
+			}
 		}
 	}
 }
