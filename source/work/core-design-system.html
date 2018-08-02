@@ -40,29 +40,62 @@
 			<li>The inertia around the system has given a voice to <a href="lt-accessibility.html">accessibility efforts</a> and inspired the creation of enterprise design principles.</li>
 		</ul>
 
-		<hr class="break">
+		<figure>
+			<img src="/img/core-ui.jpg" alt="">
+			<figcaption>Core UI, Core Decision Tree and Core FlowKit</figcaption>
+		</figure>
 
 		<h2>Background</h2>
-		<p>Like any good digital story this one starts with paper and static assets. When I started working at Life Time as part of the internal agency in early 2016 all of the styles and patterns for web properties were maintained within Photoshop and documented in PDFs. It wasn’t that they hadn’t attempted to have documentation on a website before, they had, but those were static—sites created by the agency with no shared code between development or other teams. At this point in time the process was very much design tossed over the wall, which didn’t benefit collaboration.</p>
+		<p>Like any good digital story this one starts with paper and static assets. In early 2015, when I joined Life Time’s internal agency the styles and patterns for web properties were maintained within Photoshop and documented in PDFs. Previous efforts to manage design patterns as static websites had fallen short, lacking shared assets between development and other teams.</p>
+
 
 		<h2>Objective</h2>
-		<p>The objective was quite simple at the start, stand up a dynamic website that could display and document existing styles. It might’ve been simple, but that didn’t make it easy. At this early stage the technology team wasn’t keen on designers coding (I had done front-end development previously) so one of the goals was to proceed in a way that built trust between teams while keeping clear of “prod.” This site would be the agency’s styleguide and source of truth for any web work that was handed over to dev.
+		<p>Standing up a dynamic website to display and document existing styles and patterns with semantic markup was the initial objective. In the early stages we proceeded in an open and collaborative way that built trust between teams. This site would be the agency’s styleguide and source of truth for any web work, but it would do so in a way that was transparent with more parity to a final developed state.</p>
+
+		<figure>
+			<img src="/img/core-ui-sample.png" alt="">
+			<figcaption>Core UI Elements</figcaption>
+		</figure>
 
 		<h2>Method</h2>
-		<p>From previous efforts I knew that a static site was not the right approach. Given our existing styles and patterns frameworks were also out of the question due to the amount of customization that would be required and lack of parity with our existing markup patterns. Around this same time <a class="link-underlined" href="http://patternlab.io/" target="_blank" rel="noopener">Pattern Lab<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a> was gaining traction, fueled by Brad Frost’s <a class="link-underlined" href="http://atomicdesign.bradfrost.com/" target="_blank" rel="noopener">Atomic Design<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a> principles. I had some familiarity with it from previous experiences and knew it’d be a good place to start.</p>
 
-		<p>It’s probably worth noting that this wasn’t an officially sanctioned project yet. We had to fly under the radar a bit to prove out the concept and win some ground to stand on.</p>
+		<p>Given our existing styles and patterns as well as the cadence we wanted to start getting things documented we knew we needed lightweight, low barrier solution that was framework agnostic. Around this same time <a href="http://patternlab.io/" target="_blank" rel="noopener">Pattern Lab<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a> was gaining traction, fueled by Brad Frost’s <a href="http://atomicdesign.bradfrost.com/" target="_blank" rel="noopener">Atomic Design<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a> principles. I had used it for clients before and knew it’d be a good place to start.</p>
 
-		<h3>Make Friends</h3>
+		<figure>
+			<img src="/img/core-framework.jpg" alt="">
+			<figcaption>Core Framework Component</figcaption>
+		</figure>
 
-		<p>You might’ve noticed that I just said “we,” that’s because I made a good connection in one of the development teams who had a shared passion for. Making friends is definitely a method I push for any time grassroots efforts are greening up. In a previous role I’d served as the designer for a team of 8–11 developers</p>
+		<blockquote><p>We just needed to prove that a resource like this could bring two or more disciplines closer together and improve the efficacy of the work.</p></blockquote>
 
-		<h3>Proove it Out</h3>
+		<p>All of effort to this point was still somewhat under the radar and not defined as an official project. We didn’t need to propose a design systems team or even ask for an official status quite yet, we just needed to prove that a resource like this could bring two or more disciplines closer together and improve the efficacy of the work.</p>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, obcaecati, repellendus! Corrupti animi ipsum accusamus minus corporis laudantium explicabo, labore modi odit voluptatum exercitationem, voluptas maxime sequi, dolorem, expedita sint.</p>
+		<p>We stood up a site using Pattern Lab, and started documenting our styles and patterns in an atomic structure. We set it behind employee credentials and maintained it within a simple repo.</p>
 
 		<h2>Outcomes</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellat molestias ullam atque, qui beatae suscipit. Sequi totam quo repellat, suscipit perferendis, commodi laborum dignissimos sint libero quam pariatur earum.</p>
+
+		<p>Today the <em>Core Design System</em> is viewed as the sum of three parts. The First is the <em>Core Framework</em> that includes the component library, documentation and development dependencies. Now on the Node version of Pattern Lab, the site contains 100% production-ready styles, markup and functionality.</p>
+
+		<img src="/img/core-parts.svg" alt="The 3 parts of Core: Core Framework, Core Design Guidelines, Core UI">
+
+		<p>The second part is the <em>Core Design Guidelines</em>. This is where the atomic structure is flattened out for designers, authors and business owners in the form of a pattern library. It references live examples from the <em>Core Framework</em> as a single source of truth. Documentation for each example includes an overview and a <em>Usage</em> section with rules, constraints, principles, accessibility requirements and class/configuration tables for authoring. A standalone <em>Guidelines</em> section includes our point of view on concepts like content strategy, performance and user experience while offering a robust section on accessibility that includes a checklist and four-step approach to preforming an accessibility audit. Lastly, guides are provided for creating fluid media assets and working with SVG.</p>
+
+		<figure>
+			<img src="/img/core-dg.jpg" alt="">
+			<figcaption>Core Accessibility Guidelines</figcaption>
+		</figure>
+
+		<p>The final section is the <em>Core UI</em> styleguide. This is the cloud-based Sketch library for all design assets needed to create new experiences.</p>
+
+		<p><em>Core</em> now has full VP and department manager support and nearly a dozen contributors across five teams. Multiple web properties and third-party integrations rely on its patterns and it is the go-to resource for our accessibility efforts.</p>
+
+		<h3>Experience Core</h3>
+
+		<ul>
+			<li><a href="https://ltfstyleguide.azurewebsites.net/" target="_blank" rel="noopener">Core Framework<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a></li>
+			<li><a href="http://ltdesign.azurewebsites.net/" target="_blank" rel="noopener">Core Design Guidelines<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a></li>
+			<li><a href="https://sketch.cloud/s/1VM4a" target="_blank" rel="noopener">Core UI<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a></li>
+		</ul>
 
 		<hr class="break">
 
@@ -95,6 +128,6 @@
 	<script>
 		if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
 	</script>
-	<script src="js/main.js"></script>
+	<script src="/js/main.js"></script>
 </body>
 </html>
