@@ -49,3 +49,29 @@
 	white-space: nowrap;
 }
 
+// Animation
+
+.fade1, .fade2 {
+	opacity: 0;
+}
+
+.fade1 {
+	animation: fade-rotate-up 0.75s ease 1 forwards;
+}
+
+.fade2 {
+	animation: fade-rotate-up 650ms ease 500ms 1 normal forwards running;
+}
+
+@keyframes fade-rotate-up {
+	0% {
+		opacity: 0;
+		transform: translateY(2%) rotate3d(1, -1, 0, 15deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0) rotate3d(0, 0, 0);
+	}
+}
+

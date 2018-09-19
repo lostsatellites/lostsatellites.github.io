@@ -54,16 +54,27 @@
 
 	// Images
 	img {
-		margin: 0 auto 1.5em;
+		margin: 3em auto;
+
+		@include breakpoint(lg) {
+			margin-top: 4em;
+			margin-bottom: 4em;
+		}
 	}
 
 	// Figure
 	figure {
-		margin: 0 auto 1.5em;
+		margin: 3em auto;
 		text-align: center;
+
+		@include breakpoint(lg) {
+			margin-top: 4em;
+			margin-bottom: 4em;
+		}
 
 		img {
 			box-shadow: 0 0 0 8px white;
+			margin-bottom: 1.5em;
 		}
 	}
 
