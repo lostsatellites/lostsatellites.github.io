@@ -10,12 +10,10 @@
 .main,
 .main__intro {
 	margin: 0 auto;
-	max-width: $max-width;
 	padding-left: $gutter-width;
 	padding-right: $gutter-width;
 	position: relative;
 	width: 100%;
-
 }
 
 .main {
@@ -60,6 +58,7 @@
 	// Figure
 	figure {
 		margin: 3em auto;
+		max-width: $max-width;
 		text-align: center;
 
 		@include breakpoint(lg) {
@@ -104,9 +103,11 @@
 }
 
 .main__intro {
+	padding-top: $space-double;
 	padding-bottom: $space;
 
 	@include breakpoint(md) {
+		padding-top: $space-quad;
 		padding-bottom: $space-double;
 	}
 
@@ -158,10 +159,27 @@
 	width: 48%;
 }
 
+// Lead
+.lead {
+	background-color: $gray;
+	color: $cloud;
+	margin: 0 (-$space) $space-double;
+	padding: $space-double $space;
+
+	@include breakpoint(md) {
+		margin: 0 (-$space) $space-quad;
+		padding: $space-quad $space;
+	}
+
+	.inset-b-l {
+		border-left-color: rgba($cloud,0.2);
+	}
+}
+
 // hr
 .break {
 	border: 0;
-	border-top: 1px solid $smoke;
+	border-top: 2px solid rgba($black,0.07);
 	height: 0;
 	margin-top: $space-double;
 	margin-bottom: $space-double;

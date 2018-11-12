@@ -85,7 +85,7 @@
 	padding-left: 0.5rem;
 
 	@include breakpoint(md) {
-		border-left-color: rgba($white,0.2);
+		border-left-color: rgba($cloud,0.2);
 		color: $white;
 	}
 

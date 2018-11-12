@@ -8,13 +8,13 @@
 	flex-wrap: nowrap;
 	height: 4rem;
 	justify-content: space-between;
-	margin-bottom: $space-double;
+	// margin-bottom: $space-double;
 	padding-left: $space;
 	padding-right: $space;
 
 	@include breakpoint(md) {
 		height: 5rem;
-		margin-bottom: $space-quad;
+		// margin-bottom: $space-quad;
 	}
 
 	@include breakpoint(xl) {

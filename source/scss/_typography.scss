@@ -67,37 +67,6 @@ h6 {
 	@include responsive-headers($h6-properties);
 }
 
-.text-mask {
-	color: $gray; // fallback
-	background-color: $gray; // fallback if img fails to load
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
-}
-
-.mask-1 {
-	background-image: linear-gradient(to bottom right, #007faa 0%, #004d77 100%);
-}
-
-.mask-2 {
-	background-image: linear-gradient(to bottom right, #8a8a8a 0%, #222 100%);
-}
-
-.mask-3 {
-	background-image: linear-gradient(to bottom right, #ca009d 0%, #4c0097 100%);
-}
-
-.mask-4 {
-	background-image: linear-gradient(to bottom right, #286daf 0%, #a68a77 100%);
-}
-
-.mask-5 {
-	background-image: linear-gradient(to bottom right, #d06400 0%, #8d2200 100%);
-}
-
-
 p,
 ul,
 ol,
