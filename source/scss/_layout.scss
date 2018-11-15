@@ -25,6 +25,15 @@
 		padding-bottom: $space-double;
 	}
 
+	// Immediate heading
+	& > h1 {
+		padding-top: $space-double;
+
+		@include breakpoint(md) {
+			padding-top: $space-quad;
+		}
+	}
+
 	// Links
 	a {
 		border-bottom: 2px solid rgba($navy,0.25);
