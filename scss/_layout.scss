@@ -23,7 +23,7 @@
 	background: $smoke url('/dist/img/jebg.jpg') no-repeat top center;
 	background-size: cover;
 	flex: 2;
-	padding: 0 2rem;
+	padding: 0 1rem;
 
 	h1 {
 		margin-bottom: 0;
@@ -35,8 +35,25 @@
 		max-width: 760px;
 	}
 
+	.descriptor {
+		font-size: 1rem;
+	}
+
+	a {
+		border-bottom: 2px solid rgba($cloud, 0.25);
+		color: $cloud;
+		padding-bottom: 2px;
+		text-decoration: none;
+		transition: border-bottom 0.15s linear;
+
+		&:hover {
+			border-bottom-color: $cloud;
+		}
+	}
+
 	@include MQ(md) {
 		background-image: url('/dist/img/jebg-md.jpg');
+		padding: 0 2rem;
 	}
 
 	@include MQ(lg) {
@@ -45,7 +62,9 @@
 }
 
 .s2 {
-	background-color: $smoke;
+	background-color: darken($slate, 10%);
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
 }
 
 [aria-label="connect"] {
