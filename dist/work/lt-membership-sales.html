@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
 
-	<script>
+	<!-- <script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -15,7 +15,7 @@
 
 		ga('create', 'UA-39355668-1', 'auto');
 		ga('send', 'pageview');
-	</script>
+	</script> -->
 </head>
 <body>
 
@@ -37,34 +37,42 @@
 			<h2>Summary</h2>
 			<ul>
 				<li>Multiple offline and backend processes have been replaced by an online membership builder.</li>
-				<li>In less than a year online the site now accounts for over 30% of all new memberships created.</li>
+				<li>The site now accounts for over 30% of all new memberships created and has broken year-over-year sales records.</li>
 			</ul>
 		</div>
 
 		<h2>Background</h2>
-		<p>Life Time is an established, yet fast-growing company with a strong membership base. Traditionally, sales happen in-person with a representative  collecting member data at sign up. To modernize and streamline the process it was time to allow prospects to become a member by simply joining online.</p>
+		<p>Life Time is an established, yet fast-growing company with a strong membership base. Traditionally, sales happen in-person with a representative  collecting member data at sign up. To modernize and streamline the process it was time to allow prospects to become a member simply by joining online.</p>
 
-		<p>With a background designing for enterprise-level systems at Life Time, I was included in the project as the UX and design lead.</p>
+		<figure>
+			<img src="/img/lt-sales-flow.png" alt="">
+			<img data-src="https://res.cloudinary.com/jrmyldr/image/upload/v1543468424/lt-sales-flow.png" class="cld-responsive">
 
-		<img src="http://via.placeholder.com/1600x900" alt="">
+			<figcaption>Initial user flow</figcaption>
+		</figure>
 
 		<h2>Objective</h2>
 		<p>Create a progressive membership builder that starts with a prospect choosing a location, and ends with a prospect-turned-new-member beginning the onboarding process.</p>
 
-		<img src="http://via.placeholder.com/160x90" alt="">
-
-		<h2>Method</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore deserunt eligendi aliquam nulla quae dolorem, fugit delectus nostrum voluptatem numquam hic ad itaque eum animi iure sint minus est laboriosam.</p>
-
 		<figure>
-			<img src="http://via.placeholder.com/160x90" alt="">
-			<figcaption>Caption</figcaption>
+			<img src="/img/lt-sales-locations.png" alt="">
+			<figcaption>Choose a Location — step 1 of the progressive disclosure</figcaption>
 		</figure>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, obcaecati, repellendus! Corrupti animi ipsum accusamus minus corporis laudantium explicabo, labore modi odit voluptatum exercitationem, voluptas maxime sequi, dolorem, expedita sint.</p>
+		<h2>Method</h2>
+		<p>Beginning with competitive analysis we wanted to understand the common patterns, funnels and decisions users faced when joining a fitness center online. Based on initial requirements and observations, I developed a prototype of our 14-club pilot experience to be used in a series of self-moderated, task-based usability testing sessions.</p>
+
+		<p>Introducing new systems and workflows that replace or compliment existing methods can expose operational, and sometimes emotional challenges. To make sure everyone was on the same page we held several collaborative listening sessions with the in club and remote sales teams, along with legacy technology owners.</p>
+
+		<p>After a successful pilot, the new experience launched for all 139+ clubs. We continue to shape the experience through A/B testing, moderated usability testing, analytics, accessibility audits, design reviews and feature enhancements.</p>
+
+		<figure>
+			<img src="/img/lt-sales-options.png" alt="">
+			<figcaption>Membership Options — step 2 of the progressive disclosure</figcaption>
+		</figure>
 
 		<h2>Outcomes</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellat molestias ullam atque, qui beatae suscipit. Sequi totam quo repellat, suscipit perferendis, commodi laborum dignissimos sint libero quam pariatur earum.</p>
+		<p>Sales continue to surpass expectations. We’re learning new ways to present the breadth of membership options and configurations to potential members. Legacy systems are being phased out. We’re shaping a better onboarding flow. And lastly, our teams, processes, and tools are providing a more consistent, premium join experience.</p>
 
 		<hr class="break">
 
@@ -98,5 +106,10 @@
 		if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
 	</script>
 	<script src="/js/main.js"></script>
+	<script src="/js/cloudinary-core-shrinkwrap.js"></script>
+	<script type="text/javascript">
+		var cl = cloudinary.Cloudinary.new({cloud_name: "jrmyldr"});
+		cl.responsive();
+	</script>
 </body>
 </html>
