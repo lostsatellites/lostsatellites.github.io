@@ -87,26 +87,14 @@
 
 	// Blockquotes
 	blockquote {
+		border-left: 4px solid rgba($black,0.07);
 		color: $smoke;
-		margin-top: 1.5em;
-
-		@include breakpoint(lg) {
-			float: right;
-			margin-top: 0;
-			margin-left: $space;
-			width: 300px;
-		}
+		padding-left: 1.5em;
 
 		p {
 			font-size: 1.5em;
 			line-height: 1.25;
 			margin-bottom: 0;
-			text-align: center;
-
-			@include breakpoint(md) {
-				// font-size: 1.75em;
-				text-align: left;
-			}
 		}
 	}
 }
