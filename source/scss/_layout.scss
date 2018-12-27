@@ -85,6 +85,27 @@
 		font-size: 0.875em;
 	}
 
+	// Gallery
+	.gallery {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: $max-width;
+
+		img {
+			margin: 0 $space-double $space-double;
+			// max-height: 180px;
+			// max-width: 40%;
+		}
+
+		@include breakpoint(md) {
+
+			img {}
+		}
+	}
+
 	// Blockquotes
 	blockquote {
 		border-left: 4px solid rgba($black,0.07);
