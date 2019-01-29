@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Jeremy Elder | Work | Core Design System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-39355668-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+
+	<header class="header" role="banner">
+		<a href="/" class="brand"><img src="/img/je-badge.svg" role="img" alt="Jeremy Elder Homepage"></a>
+		<nav class="nav-primary-container">
+			<ul class="nav-primary-list">
+				<li class="nav-primary-item"><a href="/">Work</a></li>
+				<li class="nav-primary-item"><a href="/about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="lead">
+			<h1 class="fade1">Core Design System</h1>
+			<p class="small font-sans inset-b-l">Pattern Lab, Sketch UI, Front-end Development, Documentation</p>
+			<img src="/img/core-family.svg" role="img" alt="">
+
+			<h2>Summary</h2>
+			<ul>
+				<li>Static Photoshop and PDF files transformed into a dynamic design system complete with a development framework, Sketch UI library, documentation, and guidelines with several regular contributors.</li>
+				<li>The Core Design System serves multiple web properties, supports external teams, and encouraged sibling systems for channels like mobile and email.</li>
+				<li>The inertia around the system has given a voice to accessibility efforts and inspired the creation of enterprise design principles.</li>
+			</ul>
+		</div>
+
+		<h2>Background</h2>
+		<p>Like many design system stories, this one also started by doing things that didn’t scale. Things like maintaining styles and patterns in Photoshop and PDFs while storing them on internal servers where updates can be tedious and sharing wearisome. To the few of us doing the collecting, curating and sharing the evergreen nature of the effort was energizing and laid a great foundation to build on.</p>
+
+		<figure role="figure" aria-label="Core UI, Core Decision Tree and Core FlowKit">
+			<img src="/img/core-ui.jpg" alt="Core Design System User Interface Elements">
+			<figcaption>Core UI, Core Decision Tree and Core FlowKit</figcaption>
+		</figure>
+
+		<h2>Objective</h2>
+		<p>Scale the resources and reach. To that end we wanted to stand up a dynamic website to display and document existing styles and patterns with semantic markup while creating a playground for exploration. We also wanted to include a starter kit of sorts for both designers and developers.</p>
+
+		<figure role="figure" aria-label="Core UI Elements">
+			<img src="/img/core-ui-sample.png" alt="Core Design System Button and Form Elements">
+			<figcaption>Core UI Elements</figcaption>
+		</figure>
+
+		<h2>Method</h2>
+
+		<p>We knew we needed lightweight, low barrier solution that was framework agnostic and included documentation inline. Around this same time <a href="http://patternlab.io/" target="_blank" rel="noopener">Pattern Lab<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a> was gaining traction, fueled by Brad Frost’s <a href="http://atomicdesign.bradfrost.com/" target="_blank" rel="noopener">Atomic Design<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a> principles. I was familiar with it from other projects and knew it’d be a good place to start.</p>
+
+		<figure role="figure" aria-label="Core Framework Component">
+			<img src="/img/core-framework.jpg" alt="Pattern Lab Screen with Example Pattern">
+			<figcaption>Core Framework Component</figcaption>
+		</figure>
+
+		<!-- <blockquote><p>Like many design system stories this one started by doing things that don’t scale.</p></blockquote> -->
+
+		<p>We stood up the site using Pattern Lab, and started documenting our styles and patterns in an atomic structure and then set it behind employee credentials, created a simple build process and maintained it within a shared repo. When applicable we also added elements to a master Sketch UI library.</p>
+
+		<p>Referencing the site and Sketch assets as the source of truth for patterns creation and use was critical for everyone from business partners and designers to developers and QA to build trust in the system.</p>
+
+		<h2>Outcomes</h2>
+
+		<p>Today the <em>Core Design System</em> is the sum of three parts. The First is the <em>Core Framework</em> that includes the component library, documentation and development dependencies. Currently on the Node version of Pattern Lab, the site contains 100% production-ready styles, markup and functionality.</p>
+
+		<p>The second part is the <em>Core Design Guidelines</em>. This is where the atomic structure is flattened out for designers, authors and business owners in the form of a pattern library. Each pattern references live examples from the <em>Core Framework</em> and includes documentation with an overview, rules, constraints, principles, accessibility requirements, and class/configuration notes for authoring.</p>
+
+		<p>Within the guidelines there‘s sections that include our perspective on concepts like content strategy, performance, user experience, and accessibility. Lastly, guides are provided for some of our most common workflows.</p>
+
+		<figure role="figure" aria-label="Core Accessibility Guidelines">
+			<img src="/img/core-dg.jpg" alt="Page from Core Design Guidelines Accessibility Section">
+			<figcaption>Core Accessibility Guidelines</figcaption>
+		</figure>
+
+		<p>The final section is the <em>Core UI</em> styleguide. This is the cloud-based Sketch library for all design assets needed to create new experiences.</p>
+
+		<p><em>Core</em> now has full VP and department manager support. Multiple web properties and third-party integrations rely on its patterns and it is the go-to resource for our accessibility efforts. While we don’t have a dedicated design systems team, we have the beginnings of a solid <a class="link-underlined" href="https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0" target="_blank" rel="noopener">federated team model<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a> with contributors from at least five teams. We also hold frequent training sessions between designers and developers—building upon the very relationships that laid the foundation at the start.</p>
+
+		<h3>Experience Core</h3>
+
+		<ul>
+			<li><a href="https://ltfstyleguide.azurewebsites.net/" target="_blank" rel="noopener">Core Framework<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a></li>
+			<li><a href="http://ltdesign.azurewebsites.net/" target="_blank" rel="noopener">Core Design Guidelines<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a></li>
+			<li><a href="https://sketch.cloud/s/1VM4a" target="_blank" rel="noopener">Core UI<span class="ext-ref">(external link)</span><span aria-hidden="true"></span></a></li>
+		</ul>
+
+		<hr class="break">
+
+		<h2 class="h4" id="navWorkTitle">Other Work</h2>
+		<nav aria-labelledby="navWorkTitle">
+			<ul class="nav-work">
+				<li class="nav-work__item"><a href="core-design-system.html" aria-current="page">Core Design System</a></li>
+				<li class="nav-work__item"><a href="lt-membership-sales.html">Life Time Membership Sales</a></li>
+				<li class="nav-work__item"><a href="lt-connect.html">LT Connect</a></li>
+				<li class="nav-work__item"><a href="lt-accessibility.html">Life Time Accessibility</a></li>
+				<li class="nav-work__item"><a href="wild-mind-artisan-ales.html">Wild Mind Artisan Ales</a></li>
+				<li class="nav-work__item"><a href="cross-of-grace.html">Cross of Grace</a></li>
+				<li class="nav-work__item"><a href="illustration.html">Illustration</a></li>
+			</ul>
+		</nav>
+	</main>
+
+	<footer class="footer">
+		<p class="colophon">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Jeremy Elder</p>
+		<nav class="nav-connect-container">
+			<ul class="nav-connect-list">
+				<li class="nav-connect-item"><a href="https://dribbble.com/jeremyelder" target="_blank" rel="noopener"><img src="/img/dribbble.svg" role="img" alt="dribbble"></a></li>
+				<li class="nav-connect-item"><a href="https://twitter.com/jeremyelder" target="_blank" rel="noopener"><img src="/img/twitter.svg" role="img" alt="twitter"></a></li>
+				<li class="nav-connect-item"><a href="https://www.linkedin.com/in/jeremyelder/" target="_blank" rel="noopener"><img src="/img/linkedin.svg" role="img" alt="linkedin"></a></li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script>
+		if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+	</script>
+	<script src="/js/main.js"></script>
+</body>
+</html>

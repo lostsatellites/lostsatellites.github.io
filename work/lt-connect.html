@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Jeremy Elder | Work | Core Design System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-39355668-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+
+	<header class="header" role="banner">
+		<a href="/" class="brand"><img src="/img/je-badge.svg" role="img" alt="Jeremy Elder Homepage"></a>
+		<nav class="nav-primary-container">
+			<ul class="nav-primary-list">
+				<li class="nav-primary-item"><a href="/">Work</a></li>
+				<li class="nav-primary-item"><a href="/about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="lead">
+			<h1 class="fade1">LT Connect</h1>
+			<p class="small font-sans inset-b-l">UI, Interaction Design</p>
+			<img src="/img/gauges.svg" role="img" alt="">
+
+			<div class="summary">
+				<h2>Summary</h2>
+				<ul>
+					<li>Simplified UI for users to track live workout data in class and training settings.</li>
+					<li>Streamlined instructor app flow for better class setup, participant onboarding and session management.</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Background</h2>
+		<p>In its most basic form a room lined with mirrors provides great workout feedback, but what happens when you want to know more about what your body is experiencing or what pushing 250 watts on a stationary bike feels like? Similarly, being greeted as you enter a fitness class or training session is welcoming and engaging, but what if that instructor was aware you were even coming in the first place, or what equipment you preferred? How much better would you be served then?</p>
+
+		<figure role="figure" aria-label="LT Connect gauge and reporting exploration">
+			<img src="/img/lt-connect-exploration.png" alt="A Variety of LT Connect Gauges and Charts">
+			<figcaption>LT Connect gauge and reporting exploration</figcaption>
+		</figure>
+
+		<p>These were the questions we were asking ourselves as we looked to create a more holistic and robust fitness experience. With an enhanced visual layer we could better coach and educate participants. At the same time we could operationally compliment instructor and trainer efforts, allowing them to focus more on the students and less on the technology and equipment.</p>
+
+		<figure role="figure" aria-label="LT Connect UI elements">
+			<img src="/img/lt-connect-gauges.png" alt="LT Connect Screen with a Variety of Gauges">
+			<figcaption>LT Connect UI elements</figcaption>
+		</figure>
+
+		<h2>Objective</h2>
+		<p>Quite simply this was about enhancing class and session experiences with real-time visual feedback and integrated tools. Instructors and trainers had to efficiently check in and manage participants and equipment. And once in session users should only need a glance to understand and react to key data points.</p>
+
+		<figure role="figure" aria-label="LT Connect Instructor App flow">
+			<img src="/img/lt-connect-app.png" alt="LT Connect Wireframe Screens">
+			<figcaption>LT Connect Instructor App flow</figcaption>
+		</figure>
+
+		<h2>Method</h2>
+		<p>For the gauges I normalized the data points that someone is coached to, like heart rate, cadence or power, and took into account the environments in which the gauges would be used and displayed. This allowed me to create a simple system that leveraged icons and color as differentiators. With less attributes a user can be more focused on the data point and not distracted by peripheral changes. At the same time this is also more performant when a large group of real-time gauges are persent and constantly updating.</p>
+
+		<p>With over 139 clubs and physical settings that range from brightly lit fitness floors to dim class and cycling studios there was plenty of display variability. Someone could be in the front or back of a room, or standing under or across from a suspended monitor while anywhere from 1 to 60 individuals could have data displayed at a given time. All of this had to be taken into account and tested.</p>
+
+		<figure role="figure" aria-label="LT Connect Instructor App wireframes">
+			<img src="/img/lt-connect-app-screens.png" alt="LT Connect App Screens">
+			<figcaption>LT Connect Instructor App wireframes</figcaption>
+		</figure>
+
+		<p>For the instructor app I opted to go with a dark theme given that in most cases it would be used in a dimly lit studio. After understanding the full task set I was able to wireframe a complete set of screens and organize them into a flow.</p>
+
+		<h2>Outcomes</h2>
+		<p>In the end one of the most simple gauge designs was implemented. It's not distracting or overwhelming when there are many on a single screen. It's versatile for any display or data point and it emphasizes what you need to know while providing a great foundation to build on.</p>
+
+		<p>The app has yet to be developed, however the current state allows us to better understand instructor scenarios and to set a north star for further operational alignment.</p>
+
+		<hr class="break">
+
+		<h2 class="h4" id="navWorkTitle">Other Work</h2>
+		<nav aria-labelledby="navWorkTitle">
+			<ul class="nav-work">
+				<li class="nav-work__item"><a href="core-design-system.html">Core Design System</a></li>
+				<li class="nav-work__item"><a href="lt-membership-sales.html">Life Time Membership Sales</a></li>
+				<li class="nav-work__item"><a href="lt-connect.html" aria-current="page">LT Connect</a></li>
+				<li class="nav-work__item"><a href="lt-accessibility.html">Life Time Accessibility</a></li>
+				<li class="nav-work__item"><a href="wild-mind-artisan-ales.html">Wild Mind Artisan Ales</a></li>
+				<li class="nav-work__item"><a href="cross-of-grace.html">Cross of Grace</a></li>
+				<li class="nav-work__item"><a href="illustration.html">Illustration</a></li>
+			</ul>
+		</nav>
+	</main>
+
+	<footer class="footer">
+		<p class="colophon">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Jeremy Elder</p>
+		<nav class="nav-connect-container">
+			<ul class="nav-connect-list">
+				<li class="nav-connect-item"><a href="https://dribbble.com/jeremyelder" target="_blank" rel="noopener"><img src="/img/dribbble.svg" role="img" alt="dribbble"></a></li>
+				<li class="nav-connect-item"><a href="https://twitter.com/jeremyelder" target="_blank" rel="noopener"><img src="/img/twitter.svg" role="img" alt="twitter"></a></li>
+				<li class="nav-connect-item"><a href="https://www.linkedin.com/in/jeremyelder/" target="_blank" rel="noopener"><img src="/img/linkedin.svg" role="img" alt="linkedin"></a></li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script>
+		if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+	</script>
+	<script src="/js/main.js"></script>
+</body>
+</html>

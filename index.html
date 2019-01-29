@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<title>Jeremy Elder | Experience Designer</title>
+	<title>Jeremy Elder | Work</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="dist/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700" rel="stylesheet">
 
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -17,35 +17,129 @@
 		ga('send', 'pageview');
 	</script>
 </head>
-<body>
+<body class="site-wrap">
 
 	<header class="header" role="banner">
-		<a href="/" class="brand"><img src="dist/img/je.svg" alt="Jeremy Elder"></a>
+		<a href="/" class="brand"><img src="img/je-badge.svg" role="img" alt="Jeremy Elder Homepage"></a>
+		<nav class="nav-primary-container">
+			<ul class="nav-primary-list">
+				<li class="nav-primary-item is-current"><a href="/">Work</a></li>
+				<li class="nav-primary-item"><a href="/about.html">About</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<main class="main-landing">
-		<section class="section s1">
-			<h1>Hello.</h1>
-			<p>I’m Jeremy, Experience Designer by trade &mdash; designer, illustrator, front-end developer and friend of all things accessible by practice.</p>
-			<p class="descriptor">Currently, at <a href="https://www.lifetime.life/" target="_blank" rel="noopener">Life Time</a>, I serve as a design and experience lead for several web properties, contribute to the enterprise design system, and help drive accessibility efforts.</p>
-		</section>
-		<section class="section s2">
-			<nav aria-label="connect">
-				<a href="https://dribbble.com/jeremyelder" target="_blank"><img src="dist/img/dribbble.svg" alt="dribbble"></a>
-				<a href="https://twitter.com/jeremyelder" target="_blank"><img src="dist/img/twitter.svg" alt="twitter"></a>
-				<a href="https://www.linkedin.com/in/jeremyelder/" target="_blank"><img src="dist/img/linkedin.svg" alt="linkedin"></a>
-			</nav>
-		</section>
+	<main class="main-work">
+		<div class="main__intro">
+			<h1 class="main__intro__heading fade1">System-minded, dot-connecting design.</h1>
+			<p class="main__intro__descriptor inset-b-l fade2">I’m Jeremy, Experience Designer by trade — designer, illustrator, front-end developer, and friend of all things accessible by practice.</p>
+		</div>
+		<div class="group">
+			<a class="work-item work-item--tall" href="work/core-design-system.html">
+				<picture>
+					<source media="(min-width: 992px)" srcset="/img/core-home-960.png 2x, /img/core-home-480.png 1x"><source media="(min-width: 768px)" srcset="/img/core-home-992.png 2x, /img/core-home-496.png 1x">
+					<img srcset="/img/core-home-xs.png" alt="">
+				</picture>
+				<div class="work-item__wrap">
+					<div class="work-item__title">
+						<h2 class="work-item__heading">Core Design System</h2>
+						<p class="work-item__descriptor">Scaling resources and reach</p>
+					</div>
+				</div>
+			</a>
+			<a class="work-item work-item--tall" href="work/lt-membership-sales.html">
+				<picture>
+					<source media="(min-width: 992px)" srcset="/img/oms-home-960.png 2x, /img/oms-home-480.png 1x"><source media="(min-width: 768px)" srcset="/img/oms-home-992.png 2x, /img/oms-home-496.png 1x">
+					<img srcset="/img/oms-home-xs.png" alt="">
+				</picture>
+				<div class="work-item__wrap">
+					<div class="work-item__title">
+						<h2 class="work-item__heading">Life Time Membership Sales</h2>
+						<p class="work-item__descriptor">Empowering users to build memberships online</p>
+					</div>
+				</div>
+			</a>
+			<a class="work-item" href="work/lt-connect.html">
+				<picture>
+					<source media="(min-width: 992px)" srcset="/img/lt-connect-home-1920.png 2x, /img/lt-connect-home-960.png 1x"><source media="(min-width: 768px)" srcset="/img/lt-connect-home-992.png 2x, /img/lt-connect-home-480.png 1x">
+					<img srcset="/img/lt-connect-home-xs.png" alt="">
+				</picture>
+				<div class="work-item__wrap">
+					<div class="work-item__title">
+						<h2 class="work-item__heading">LT Connect</h2>
+						<p class="work-item__descriptor">Uniting users with real-time data</p>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="group">
+			<a class="work-item" href="work/lt-accessibility.html">
+				<picture>
+					<source media="(min-width: 992px)" srcset="/img/lt-a11y-home-1920.png 2x, /img/lt-a11y-home-960.png 1x"><source media="(min-width: 768px)" srcset="/img/lt-a11y-home-992.png 2x, /img/lt-a11y-home-496.png 1x">
+					<img srcset="/img/lt-a11y-home-xs.png" alt="">
+				</picture>
+				<div class="work-item__wrap">
+					<div class="work-item__title">
+						<h2 class="work-item__heading">Life Time Accessibility</h2>
+						<p class="work-item__descriptor">Awareness, action and advocacy</p>
+					</div>
+				</div>
+			</a>
+			<a class="work-item" href="work/wild-mind-artisan-ales.html">
+				<picture>
+					<source media="(min-width: 992px)" srcset="/img/wm-home-1920.jpg 2x, /img/wm-home-960.jpg 1x"><source media="(min-width: 768px)" srcset="/img/wm-home-992.jpg 2x, /img/wm-home-480.jpg 1x">
+					<img srcset="/img/wm-home-xs.jpg" alt="">
+				</picture>
+				<div class="work-item__wrap">
+					<div class="work-item__title">
+						<h2 class="work-item__heading">Wild Mind Artisan Ales</h2>
+						<p class="work-item__descriptor">From startup to can’t stop</p>
+					</div>
+				</div>
+			</a>
+			<a class="work-item work-item--square-sm" href="work/cross-of-grace.html">
+				<picture>
+					<source media="(min-width: 992px)" srcset="/img/cg-home-960.png 2x, /img/cg-home-480.png 1x"><source media="(min-width: 768px)" srcset="/img/cg-home-496.png 2x, /img/cg-home-240.png 1x">
+					<img srcset="/img/cg-home-xs.png" alt="">
+				</picture>
+				</picture>
+				<div class="work-item__wrap">
+					<div class="work-item__title">
+						<h2 class="work-item__heading">Cross of Grace</h2>
+						<p class="work-item__descriptor">Capturing a case study in-flight</p>
+					</div>
+				</div>
+			</a>
+			<a class="work-item work-item--square-sm" href="work/illustration.html">
+				<picture>
+					<source media="(min-width: 992px)" srcset="/img/illus-home-960.png 2x, /img/illus-home-480.png 1x"><source media="(min-width: 768px)" srcset="/img/illus-home-496.png 2x, /img/illus-home-240.png 1x" alt="">
+					<img srcset="/img/illus-home-xs.png" alt="">
+				</picture>
+				<div class="work-item__wrap">
+					<div >
+						<h2 class="work-item__heading">Illustration</h2>
+						<p class="work-item__descriptor">Vectors distilling concepts</p>
+					</div>
+				</div>
+			</a>
+		</div>
 	</main>
 
 	<footer class="footer">
 		<p class="colophon">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Jeremy Elder</p>
+		<nav class="nav-connect-container">
+			<ul class="nav-connect-list">
+				<li class="nav-connect-item"><a href="https://dribbble.com/jeremyelder" target="_blank"><img src="img/dribbble.svg" role="img" alt="dribbble"></a></li>
+				<li class="nav-connect-item"><a href="https://twitter.com/jeremyelder" target="_blank"><img src="img/twitter.svg" role="img" alt="twitter"></a></li>
+				<li class="nav-connect-item"><a href="https://www.linkedin.com/in/jeremyelder/" target="_blank"><img src="img/linkedin.svg" role="img" alt="linkedin"></a></li>
+			</ul>
+		</nav>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script>
-		if( !window.jQuery ) document.write('<script src="/dist/js/jquery-3.0.0.min.js"><\/script>');
+		if( !window.jQuery ) document.write('<script src="/js/jquery-3.0.0.min.js"><\/script>');
 	</script>
-	<script src="dist/js/main.js"></script>
+	<script src="/js/main.js"></script>
 </body>
 </html>

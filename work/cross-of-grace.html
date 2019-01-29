@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Jeremy Elder | Work | Core Design System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-39355668-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</head>
+<body>
+
+	<header class="header" role="banner">
+		<a href="/" class="brand"><img src="/img/je-badge.svg" role="img" alt="Jeremy Elder Homepage"></a>
+		<nav class="nav-primary-container">
+			<ul class="nav-primary-list">
+				<li class="nav-primary-item"><a href="/">Work</a></li>
+				<li class="nav-primary-item"><a href="/about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="lead">
+			<h1 class="fade1">Cross of Grace</h1>
+			<p class="small font-sans inset-b-l">Brand, Design, Development</p>
+			<img src="/img/cg-mark.svg" role="img" alt="">
+
+			<div class="summary">
+				<h2>Summary</h2>
+				<ul>
+					<li>As the utility of one website is winding down, another is aiming to take its place.</li>
+					<li>Take a look into my process real-time as I jot down what I hope to accomplish and share some visuals from this in-flight case study.</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Background</h2>
+		<p>Several years ago I built a custom WordPress theme for Cross of Grace’s church website and loaded it with responsive templates, shortcodes, a custom plugin and a custom post type to manage sermon series and a podcast. I also worked on the site’s architecture and content strategy. I think WordPress is a great platform, but time has proven that it can be difficult to maintain code that is reliant on and deeply integrated into the system. Many other functions of the site are plugin dependent too.</p>
+
+		<p>Now it’s time to reconsider where those capabilities live, and I’m capturing that process here as an evergreen case study.</p>
+
+		<figure role="figure" aria-label="New wireframe and layout exploration">
+			<img src="/img/cg-wireframes.png" alt="Cross of Grace Website Wireframes">
+			<figcaption>New wireframe and layout exploration</figcaption>
+		</figure>
+
+		<h2>Objective</h2>
+		<p>I’m aiming to create a new WordPress theme that focuses more on the presentation of the website and less on the function. This might sound a little counterintuitive so let me explain. It’s not that I don’t want the theme (or even WordPress instance) to have a certain level of function or capability, rather I’d like the website to skew more towards a <em>consumer</em> of functionality instead of the source of it. If there’s a particular faculty you want a WordPress site to have it’s almost a guarantee there’s a plugin to do it—from experience I’m just not convinced that this is always where the capability should lie.</p>
+
+		<p>It should go without saying, but I’ll also be making everything about the theme (and site) as accessible and performant as I can. Aside from development I’ll make new considerations for the site architecture and content strategy.</p>
+
+		<h2>Method</h2>
+		<p>Here’s how I’m planning on satisfying the objective:</p>
+
+		<ul>
+			<li>Instead of updating or creating a new custom post type to manage sermon series, I want to find an existing tool that’s specifically for podcasts and integrate the feed into the website. So far I’m considering <a href="https://www.libsyn.com/" target="_blank" rel="noopener">Libsyn</a>.</li>
+			<li>Rely less on WordPress plugins and leverage APIs or custom scripts instead.</li>
+			<li>New design and layouts that use flexbox, CSS grid and CSS variables when it makes sense (if I think of any other buzzwordy things I’ll be sure to add them too). I didn’t rely on any frameworks previously and plan on keeping it that way.</li>
+			<li>I’ve been using Sketch since it was in beta, but for this project I’m running with <a href="figma.com" target="_blank" rel="noopener">Figma</a> so that design, prototyping and annotations live in one place.</li>
+			<li><a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener">WCAG 2.1 AA</a> will be the site’s accessibility standard. I’ll be doing both manual and automated scans during and post development.</li>
+			<li>To address performance I want to leverage system fonts, have a better build process for concatenation and minification, and explore WebP for image assets.</li>
+			<li>Analytics and content strategy reviews.</li>
+			<li>I’m hoping to learn a few other things along the way, perhaps about caching and performance in general.</li>
+		</ul>
+
+		<h2>Outcomes</h2>
+		<p>Stay tuned!</p>
+
+		<hr class="break">
+
+		<h2 class="h4" id="navWorkTitle">Other Work</h2>
+		<nav aria-labelledby="navWorkTitle">
+			<ul class="nav-work">
+				<li class="nav-work__item"><a href="core-design-system.html">Core Design System</a></li>
+				<li class="nav-work__item"><a href="lt-membership-sales.html">Life Time Membership Sales</a></li>
+				<li class="nav-work__item"><a href="lt-connect.html">LT Connect</a></li>
+				<li class="nav-work__item"><a href="lt-accessibility.html">Life Time Accessibility</a></li>
+				<li class="nav-work__item"><a href="wild-mind-artisan-ales.html">Wild Mind Artisan Ales</a></li>
+				<li class="nav-work__item"><a href="cross-of-grace.html" aria-current="page">Cross of Grace</a></li>
+				<li class="nav-work__item"><a href="illustration.html">Illustration</a></li>
+			</ul>
+		</nav>
+	</main>
+
+	<footer class="footer">
+		<p class="colophon">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Jeremy Elder</p>
+		<nav class="nav-connect-container">
+			<ul class="nav-connect-list">
+				<li class="nav-connect-item"><a href="https://dribbble.com/jeremyelder" target="_blank" rel="noopener"><img src="/img/dribbble.svg" role="img" alt="dribbble"></a></li>
+				<li class="nav-connect-item"><a href="https://twitter.com/jeremyelder" target="_blank" rel="noopener"><img src="/img/twitter.svg" role="img" alt="twitter"></a></li>
+				<li class="nav-connect-item"><a href="https://www.linkedin.com/in/jeremyelder/" target="_blank" rel="noopener"><img src="/img/linkedin.svg" role="img" alt="linkedin"></a></li>
+			</ul>
+		</nav>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script>
+		if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+	</script>
+	<script src="/js/main.js"></script>
+</body>
+</html>
